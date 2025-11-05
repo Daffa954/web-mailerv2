@@ -17,7 +17,7 @@
 
         <div class="bg-white  rounded-3xl shadow-lg overflow-hidden border-[1px] border-gray-200 ">
             <div class="bg-blue-500  px-6 py-4 text-center">
-                <h4 class="text-white text-3xl font-extrabold">Cloud  2025/2026 </h4>
+                <h4 class="text-white text-3xl font-extrabold">Cloud CC  2025/2026 </h4>
 
                 <h4 class="text-white text-lg mt-1 font-bold">Form Registration</h4>
             </div>
