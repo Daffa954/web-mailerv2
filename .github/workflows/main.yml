@@ -39,8 +39,13 @@ jobs:
 
       # 6️⃣ Zip the project (exclude unnecessary files)
       - name: Package for deployment
-        run: zip -r deploy.zip . -x "*.git*" "node_modules/*" ".env" "storage/*"
-
+        run: |
+          zip -r deploy.zip . -x "*.git*" "node_modules/*" ".env" "storage/*"
+          
+          echo "--- Verifying Zip File Integrity ---"
+          unzip -t deploy.zip
+          echo "--- Zip File OK ---"
+          
       # 7️⃣ Setup SSH to server
       - name: Setup SSH
         uses: webfactory/ssh-agent@v0.9.0
